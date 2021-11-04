@@ -2,7 +2,6 @@
 
 #define TABSTOP 8
 
-/* if I'm not mistaken, K&R didn't introduced the '%' operator, so I made a function that does the same */
 int distance_to_next_tab_stop(int num, int divisor);
 
 main()
