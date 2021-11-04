@@ -2,7 +2,7 @@
 
 #define TABSTOP 8
 
-int distance_to_next_tab_stop(int num, int divisor);
+int distance_to_next_tab_stop(int num);
 
 main()
 {
@@ -47,9 +47,9 @@ main()
     return 0;
 }
 
-distance_to_next_tab_stop(int num, int divisor)
+distance_to_next_tab_stop(int num)
 {
     while(num > 0)
-        num = num - divisor;
+        num = num - TABSTOP;
     return -num;
 }
