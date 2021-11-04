@@ -15,7 +15,7 @@ main()
         
         if(c == '\t')
         {
-            TABSTOP_distance = distance_to_next_tab_stop(nc,TABSTOP);
+            TABSTOP_distance = distance_to_next_tab_stop(nc);
 
             /* if its a tab after a tabstop, then this "if" will execute this exclusive case */
             if(c == '\t' && TABSTOP_distance == 0)
