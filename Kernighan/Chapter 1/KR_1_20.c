@@ -1,6 +1,9 @@
 #include <stdio.h>
 
-#define TABSTOP 8
+/* tab ('\t') work as follow -> |-------|-------|-------|-------| ... */
+/* the tab goes to the next tabstop ( -> | ), so if there's a tab ('\t') after a tabstop, tab equals 8 blanks */
+/* if there's 1 char and a tab ('\t') , tab equals 7 blanks, if there's 2 chars and a tab, tab equals 6 blanks, and so on */
+#define TABSTOP 8 /* tabstop has a 8 char lenght */
 
 int distance_to_next_tab_stop(int num);
 
